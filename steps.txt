@@ -1,0 +1,60 @@
+1. create a new asp.net core web application (API project)
+1.1 delete launchSettings and appSettings and weatherForecast Files and BuildSolution
+2. create models-folder and classes: good, goodcategory, appContext, good entry, salesfactor
+3. provide properties for entities and for AppContext class and add 3 required packages
+ (efcore-efcore.sqlserver-efcore.tools)
+ if the internet is down, try to install packages from cached folder which is at this address:
+ C:\Users\ss\.nuget\packages . to do that: 
+ add that cache folder as a NuGet Source by going to Options\package manager\package sources  then choose a
+ name(rezaPSource) and source path and press update and press ok . then on package manager console, change
+ the package source to rezaPSource and try this command for example: 
+ install-package microsoft.entityframeworkcore.tools
+4. add-migration and update-database
+5. right click on controllers folder then add-controller (mvc controller - empty) : GoodCategoriesController
+6. add  	[ApiController]
+	    [Route("api/good-categories")]
+on top of the class declaration
+7. add	
+	private readonly ApplicationContext _context;
+
+        public GoodCategoriesController()
+        {
+            _context = new ApplicationContext();
+        }
+to the class and then add this method: 
+	[HttpPost]
+        public void Add([Required][FromBody]string Title)
+        {
+            var goodCategory = new GoodCategory
+            {
+                Title = Title
+            };
+
+            _context.GoodCategories.Add(goodCategory);
+
+            _context.SaveChanges();
+        }
+8.
+		From the Package Manager Console window:
+
+Go to View > Other Windows > Package Manager Console
+Execute the following command:
+Install-Package Swashbuckle.AspNetCore -Version 5.6.3
+9.
+	add services.AddSwaggerGen(); to the ConfigureServices method in startup file
+	and then after app.UseAuthorization() in configure method: add app.UseSwagger(); and
+	app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            });
+10.
+	Build and checkout https://localhost:44352/swagger/index.html
+11.
+	add
+	if (_context.GoodCategories.Any(_ => _.Title == Title))
+            {
+                throw new GoodCategoryTitleCantBeDuplicatedExcption();
+            }
+	to goodcategorycontroller/add	and for GoodCategoryTitleCantBeDuplicatedExcption() make a separate folder and class in models folders
+12.
+	the rest is on github
