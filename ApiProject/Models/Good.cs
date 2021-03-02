@@ -14,7 +14,7 @@ namespace ApiProject.Models
         public int Count { get; set; }
         public int CategoryId { get; set; }
 
-        [ForeignKey("CategoryId")]
+        //[ForeignKey("CategoryId")]
         public GoodCategory Category { get; set; }
 
     }
