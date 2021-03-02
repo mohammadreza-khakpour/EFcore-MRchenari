@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace ApiProject.Models
@@ -12,6 +13,12 @@ namespace ApiProject.Models
         {
             optionsBuilder.UseSqlServer("Server=.;Database=RezaSuperMarket;Trusted_Connection=True;");
             base.OnConfiguring(optionsBuilder);
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+            base.OnModelCreating(modelBuilder);
         }
 
         public DbSet<GoodCategory> GoodCategories { get; set; }
