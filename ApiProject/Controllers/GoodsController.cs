@@ -38,5 +38,37 @@ namespace ApiProject.Controllers
 
             _context.SaveChanges();
         }
+
+        [HttpPut("{id}")]
+        public void Update(int id, [FromBody]UpdateGoodDto dto)
+        {
+            Good theGood = _context.Goods.Find(id);
+            theGood.Title = dto.Title;
+            theGood.Code = dto.Code;
+
+            _context.Update(theGood);
+            _context.SaveChanges();
+        }
+
+        [HttpGet]
+        public IList<GetGoodDto> GetAll()
+        {
+            return _context.Goods.Select(x => new GetGoodDto()
+            {
+                Id = x.Id,
+                CategoryId = x.CategoryId,
+                Code = x.Code,
+                Count = x.Count,
+                Title = x.Title
+            }).ToList();
+        }
+
+        [HttpDelete("{id}")]
+        public void Delete(int id)
+        {
+            _context.Goods.Remove(_context.Goods.Find(id));
+            _context.SaveChanges();
+        }
+
     }
 }
