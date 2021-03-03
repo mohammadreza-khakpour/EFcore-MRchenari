@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\a\\source\\repos\\EFCoreDemoSolution\\FluentMigration\\FluentMigration.csproj": {}
+    "C:\\Users\\rezaKh\\source\\repos\\EFcore-MRchenari\\FluentMigration\\FluentMigration.csproj": {}
   },
   "projects": {
-    "C:\\Users\\a\\source\\repos\\EFCoreDemoSolution\\FluentMigration\\FluentMigration.csproj": {
+    "C:\\Users\\rezaKh\\source\\repos\\EFcore-MRchenari\\FluentMigration\\FluentMigration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a\\source\\repos\\EFCoreDemoSolution\\FluentMigration\\FluentMigration.csproj",
+        "projectUniqueName": "C:\\Users\\rezaKh\\source\\repos\\EFcore-MRchenari\\FluentMigration\\FluentMigration.csproj",
         "projectName": "FluentMigration",
-        "projectPath": "C:\\Users\\a\\source\\repos\\EFCoreDemoSolution\\FluentMigration\\FluentMigration.csproj",
-        "packagesPath": "C:\\Users\\a\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a\\source\\repos\\EFCoreDemoSolution\\FluentMigration\\obj\\",
+        "projectPath": "C:\\Users\\rezaKh\\source\\repos\\EFcore-MRchenari\\FluentMigration\\FluentMigration.csproj",
+        "packagesPath": "C:\\Users\\rezaKh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rezaKh\\source\\repos\\EFcore-MRchenari\\FluentMigration\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\a\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rezaKh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -40,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "FluentMigrator": {
               "target": "Package",
@@ -65,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

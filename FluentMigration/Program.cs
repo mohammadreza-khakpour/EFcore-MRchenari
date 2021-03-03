@@ -1,7 +1,6 @@
 ﻿using FluentMigrator.Runner;
 using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Reflection;
 
 namespace FluentMigration
 {
@@ -9,6 +8,8 @@ namespace FluentMigration
     {
         static void Main(string[] args)
         {
+            
+
             var serviceProvider = CreateServices();
 
 
@@ -21,7 +22,7 @@ namespace FluentMigration
         private static IServiceProvider CreateServices()
         {
             return new ServiceCollection()
-
+                
                 .AddFluentMigratorCore()
                 .ConfigureRunner(rb => rb
                     .AddSqlServer()
@@ -34,7 +35,7 @@ namespace FluentMigration
         private static void UpdateDatabase(IServiceProvider serviceProvider)
         {
             var runner = serviceProvider.GetRequiredService<IMigrationRunner>();
-            runner.MigrateDown(202103031215);
+            runner.MigrateUp(202103031900);
         }
     }
 }
