@@ -63,6 +63,30 @@ namespace ApiProject.Controllers
             }).ToList();
         }
 
+        #region [join example]
+        // join example in c#
+        // here i want to create unanymous objects
+        // containing matched goodEntries & goods with same code
+        [HttpGet]
+        public void GetAll02()
+        {
+            //var allGoodEntries = GetAll();
+            //GoodsController c = new GoodsController();
+            //var allGoods = c.GetAll();
+
+            var innerJoinQuery =
+            from goodentry in _context.GoodEntries
+            join good in _context.Goods on goodentry.GoodCode equals good.Code
+            select new { aa = goodentry.Id, bb = good.Id };
+
+            foreach (var result in innerJoinQuery)
+            {
+                Console.WriteLine($"\"{result.aa}\"  {result.bb}");
+            }
+
+        } 
+        #endregion
+
         [HttpDelete("{id}")]
         public void Delete(int id)
         {

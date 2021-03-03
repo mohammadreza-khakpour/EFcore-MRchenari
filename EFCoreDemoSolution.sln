@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiProject", "ApiProject\ApiProject.csproj", "{BAE585B3-DEF2-4965-BAC2-EC0B72F5E999}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiProject", "ApiProject\ApiProject.csproj", "{BAE585B3-DEF2-4965-BAC2-EC0B72F5E999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentMigration", "FluentMigration\FluentMigration.csproj", "{515DFC6B-1F75-4D6A-A735-3BF71EA67483}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BAE585B3-DEF2-4965-BAC2-EC0B72F5E999}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAE585B3-DEF2-4965-BAC2-EC0B72F5E999}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAE585B3-DEF2-4965-BAC2-EC0B72F5E999}.Release|Any CPU.Build.0 = Release|Any CPU
+		{515DFC6B-1F75-4D6A-A735-3BF71EA67483}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{515DFC6B-1F75-4D6A-A735-3BF71EA67483}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{515DFC6B-1F75-4D6A-A735-3BF71EA67483}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{515DFC6B-1F75-4D6A-A735-3BF71EA67483}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
