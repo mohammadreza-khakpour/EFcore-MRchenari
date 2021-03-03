@@ -40,6 +40,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "FluentMigrator": {
+              "target": "Package",
+              "version": "[3.2.15, )"
+            },
+            "FluentMigrator.Runner": {
+              "target": "Package",
+              "version": "[3.2.15, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

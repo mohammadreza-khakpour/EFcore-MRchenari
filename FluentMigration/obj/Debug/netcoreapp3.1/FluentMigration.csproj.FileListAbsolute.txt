@@ -1,0 +1,12 @@
+C:\Users\a\source\repos\EFCoreDemoSolution\FluentMigration\bin\Debug\netcoreapp3.1\FluentMigration.exe
+C:\Users\a\source\repos\EFCoreDemoSolution\FluentMigration\obj\Debug\netcoreapp3.1\FluentMigration.csprojAssemblyReference.cache
+C:\Users\a\source\repos\EFCoreDemoSolution\FluentMigration\obj\Debug\netcoreapp3.1\FluentMigration.AssemblyInfoInputs.cache
+C:\Users\a\source\repos\EFCoreDemoSolution\FluentMigration\obj\Debug\netcoreapp3.1\FluentMigration.AssemblyInfo.cs
+C:\Users\a\source\repos\EFCoreDemoSolution\FluentMigration\bin\Debug\netcoreapp3.1\FluentMigrator.dll
+C:\Users\a\source\repos\EFCoreDemoSolution\FluentMigration\bin\Debug\netcoreapp3.1\FluentMigrator.Abstractions.dll
+C:\Users\a\source\repos\EFCoreDemoSolution\FluentMigration\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\a\source\repos\EFCoreDemoSolution\FluentMigration\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\a\source\repos\EFCoreDemoSolution\FluentMigration\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\a\source\repos\EFCoreDemoSolution\FluentMigration\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\a\source\repos\EFCoreDemoSolution\FluentMigration\bin\Debug\netcoreapp3.1\de-DE\FluentMigrator.Abstractions.resources.dll
+C:\Users\a\source\repos\EFCoreDemoSolution\FluentMigration\obj\Debug\netcoreapp3.1\FluentMigration.csproj.CopyComplete
