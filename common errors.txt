@@ -1,0 +1,2 @@
+error name on visual studio: FluentMigrator.Runner.Exceptions.MissingMigrationsException: 'No migrations found
+error solution: +The migration class must be public.

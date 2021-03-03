@@ -1,7 +1,7 @@
-﻿using System;
-using FluentMigrator;
-using FluentMigrator.Runner;
+﻿using FluentMigrator.Runner;
 using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Reflection;
 
 namespace FluentMigration
 {
@@ -25,7 +25,7 @@ namespace FluentMigration
                 .AddFluentMigratorCore()
                 .ConfigureRunner(rb => rb
                     .AddSqlServer()
-                    .WithGlobalConnectionString("Server=.;Database=Test;Trusted_Connection=True;")
+                    .WithGlobalConnectionString("Server=.;Database=FluentMigrationTest;Trusted_Connection=True;")// should create the database first manually
                     .ScanIn(typeof(Program).Assembly).For.Migrations())
                 .AddLogging(lb => lb.AddFluentMigratorConsole())
                 .BuildServiceProvider(false);
