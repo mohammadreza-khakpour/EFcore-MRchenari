@@ -5,8 +5,8 @@ using System.Text;
 
 namespace FluentMigration.Migrations
 {
-    [Migration(202103031233)]
-    public class _202103031233_initial : FluentMigrator.Migration
+    [Migration(202103021109)]
+    public class _202103021109_initial : FluentMigrator.Migration
     {
         public override void Down()
         {

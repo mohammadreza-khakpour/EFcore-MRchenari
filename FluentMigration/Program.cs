@@ -34,7 +34,7 @@ namespace FluentMigration
         private static void UpdateDatabase(IServiceProvider serviceProvider)
         {
             var runner = serviceProvider.GetRequiredService<IMigrationRunner>();
-            runner.MigrateUp();
+            runner.MigrateDown(202103031215);
         }
     }
 }
