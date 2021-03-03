@@ -1,2 +1,5 @@
 error name on visual studio: FluentMigrator.Runner.Exceptions.MissingMigrationsException: 'No migrations found
 error solution: +The migration class must be public.
+
+FluentMigrator.Runner.Exceptions.InvalidMigrationException: '!!! The migration _202103031233_initial contained the following Validation Error(s): DeleteForeignKeyExpression: The foreign table name cannot be null or empty.
+initial migration class name was more than other migration classes which indicates that initial migration was not the first migration (forExample initial was 202103031109 but other one was 202103031105 )

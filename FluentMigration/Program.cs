@@ -26,7 +26,7 @@ namespace FluentMigration
                 .ConfigureRunner(rb => rb
                     .AddSqlServer()
                     .WithGlobalConnectionString("Server=.;Database=FluentMigrationTest;Trusted_Connection=True;")// should create the database first manually
-                    .ScanIn(typeof(Program).Assembly).For.Migrations())
+                    .ScanIn(typeof(Program).Assembly).For.Migrations())// https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assembly?view=net-5.0
                 .AddLogging(lb => lb.AddFluentMigratorConsole())
                 .BuildServiceProvider(false);
         }
